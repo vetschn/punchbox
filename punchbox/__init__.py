@@ -40,7 +40,7 @@ def cross(dwg, size, x, y):
 
 def note_name(val):
     mod = val % 12
-    name = "{}{}".format(NOTE_NAMES[mod], (val / 12) - 2)
+    name = "{}{}".format(NOTE_NAMES[mod], (val // 12) - 2)
     return name
 
 
